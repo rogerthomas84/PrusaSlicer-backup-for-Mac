@@ -12,15 +12,21 @@ fi
 
 FILAMENT_DIR="${PRUSA_SLICER_DIR}/filament"
 PRINTER_DIR="${PRUSA_SLICER_DIR}/printer"
+PRINT_DIR="${PRUSA_SLICER_DIR}/print"
 
 echo "The following directories have been backed up"
 
 if [ -d "${FILAMENT_DIR}" ]; then
   /bin/cp -r "${FILAMENT_DIR}/" "${DIRECTORY}/filament/"
-  echo "  * /PrusaSlicer/filament"
+  echo "  * ${FILAMENT_DIR}"
 fi
 
 if [ -d "${PRINTER_DIR}" ]; then
   /bin/cp -r "${PRINTER_DIR}/" "${DIRECTORY}/printer/"
-  echo "  * /PrusaSlicer/printer"
+  echo "  * ${PRINTER_DIR}"
+fi
+
+if [ -d "${PRINT_DIR}" ]; then
+  /bin/cp -r "${PRINT_DIR}/" "${DIRECTORY}/print/"
+  echo "  * ${PRINT_DIR}"
 fi

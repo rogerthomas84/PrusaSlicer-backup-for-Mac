@@ -12,6 +12,7 @@ The following directories are backed up:
 ```
 ~/Library/Application Support/PrusaSlicer/filament/*
 ~/Library/Application Support/PrusaSlicer/printer/*
+~/Library/Application Support/PrusaSlicer/print/*
 ```
 
 The scripts DO NOT back up the physical_printer directory. If you decide to add this, be aware that it can reveal your
